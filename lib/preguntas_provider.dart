@@ -184,19 +184,7 @@ Pregunta(
         'completacion'),
 
 
-               Pregunta(
-        ' ',
-        [],
-        '',
-        'completacion'),
-
-
-
-               Pregunta(
-        ' ',
-        [],
-        '',
-        'completacion'),
+ 
         Pregunta(
         'Power BI Desktop es una herramienta completa de creación de informes y análisis de datos que se instala en el equipo local. (V/F)',
         ['Verdadero', 'Falso'],
