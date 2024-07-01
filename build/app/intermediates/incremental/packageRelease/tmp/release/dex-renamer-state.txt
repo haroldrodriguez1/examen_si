@@ -1,4 +1,0 @@
-#Mon Jul 01 00:46:00 CST 2024
-base.0=D\:\\TRABAJOS FLUTTER\\EXAMEN MENDEZ2P\\examen_si\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
