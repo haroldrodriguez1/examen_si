@@ -97,9 +97,9 @@ class PreguntasProvider with ChangeNotifier {
     ),
 
       Pregunta(
-      'Enumere 3 elementos de un informe',
+      'Enumere 6 elementos de un informe',
       [],
-      '1.  Texto\n2.  Tablas\n3.  Graficos',
+      '1.  Texto\n2.  Tablas\n3.  Graficos\n4.  Mapas\n5.  Metricas\n6.  Alertas visuales y automaticas',
       'enumeracion',
       respuestasEsperadas:3 ,
     ),
@@ -234,8 +234,34 @@ Pregunta(
         ['Gráfico de barras', 'Gráfico de líneas', 'Grafico de Pareto', 'Mapa de calor'],
         'Grafico de Pareto', 'seleccion_multiple'),
 
-       
+       Pregunta('Grafico que es una representacion circular de las frecuencias relativas de una variable cualitativa o discreta que permite de una manera sencilla y rapida, su comparacion',
+        ['Gráfico de dispersoin', 'Gráfico de líneas', 'Grafico de Sectores', 'Mapa de calor'],
+        'Grafico de Sectores', 'seleccion_multiple'),
 
+        Pregunta('Grafico que representa mediante figuras o simbolos las frecuencias de una variable cualitativa o discreta',
+        ['Gráfico de Sectores', 'Gráfico de burbujas', 'Grafico de Pareto', 'Pictograma'],
+        'Pictograma', 'seleccion_multiple'),
+
+        Pregunta('Grafico que muestra en un eje cartesiano la relacion que existe entre dos variables e informa del grado de correlacion entre ellas',
+        ['Gráfico de Sectores', 'Gráfico de dispersion', 'Grafico de Pareto', 'Mapa de calor'],
+        'Grafico de dispersion', 'seleccion_multiple'),
+
+        Pregunta('Un Cartograma es:',
+        ['Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan', 'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos', 'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos', 'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'],
+        'Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan', 'seleccion_multiple'),
+
+  Pregunta('Un Grafico en cascada es:',
+        ['Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan', 'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos', 'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos', 'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'],
+        'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos', 'seleccion_multiple'),
+
+
+  Pregunta('Un Diagrama de caja es:',
+        ['Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan', 'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos', 'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos', 'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'],
+        'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos', 'seleccion_multiple'),
+
+  Pregunta('Un Mapa de Calor es:',
+        ['Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan', 'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos', 'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos', 'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'],
+        'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores', 'seleccion_multiple'),
 
 
         Pregunta('Tipos de Informes',
