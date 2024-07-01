@@ -29,6 +29,9 @@ class PreguntasProvider with ChangeNotifier {
       'enumeracion',
       respuestasEsperadas:4 ,
     ),
+
+    
+
     Pregunta(
         'En Power BI, el término _______ hace referencia a las aplicaciones, los paneles y los informes.',
         [],
@@ -142,7 +145,58 @@ Pregunta(
         'grafico',
         'completacion'),
 
+              Pregunta(
+        'Que son los Paneles',
+        [],
+        'Conjunto de iconos que cuentan una historia.',
+        'completacion'),
 
+                 Pregunta(
+        'Que son los Informes',
+        [],
+        'Elementos gráficos de objetos que representa la información.',
+        'completacion'),
+
+                  Pregunta(
+        'Que son las Aplicaciones ',
+        [],
+        'Empaquetado de un conjunto de informes y paneles para la distribución a un grupo grande de usuarios',
+        'completacion'),
+
+              Pregunta(
+        ' Que son los conjuntos de Datos',
+        [],
+        'son las colecciones de datos que se han importado desde las diversas fuentes y que tienen relación entre ellos.',
+        'completacion'),
+
+
+       Pregunta(
+        'Que son los libros  ',
+        [],
+        'son un conjunto de datos especial, usado cuando se conecta (no se importa) a un archivo Excel.',
+        'completacion'),
+
+
+               Pregunta(
+        ' Que son los Flujos de Datos',
+        [],
+        'ayudan a unificar los datos provenientes de orígenes dispares',
+        'completacion'),
+
+
+               Pregunta(
+        ' ',
+        [],
+        '',
+        'completacion'),
+
+
+
+               Pregunta(
+        ' ',
+        [],
+        '',
+        'completacion'),
         Pregunta(
         'Power BI Desktop es una herramienta completa de creación de informes y análisis de datos que se instala en el equipo local. (V/F)',
         ['Verdadero', 'Falso'],
