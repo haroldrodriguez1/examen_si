@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: ExamenPantalla(),
       
+      
     );
   }
 }
@@ -34,6 +35,7 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
     final preguntasProvider = Provider.of<PreguntasProvider>(context);
 
     return Scaffold(
+      backgroundColor: Colors.red,
       appBar: AppBar(
         title: Text('Examen de Sistemas Inteligentes para Negocios'),
       ),
@@ -131,9 +133,11 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
     });
 
     showDialog(
+      barrierColor: Colors.red,
       context: context,
       builder: (context) {
         return AlertDialog(
+          backgroundColor: Colors.red,
           title: Text('Resultados'),
           content: SingleChildScrollView(
             child: Column(
