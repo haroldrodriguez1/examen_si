@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: ExamenPantalla(),
+      
     );
   }
 }
@@ -61,11 +62,13 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
           onChanged: (value) {
             respuestas[index] = [value];
           },
+          style: TextStyle(color: Colors.black),
         );
       case 'enumeracion':
         return Column(
           children: List.generate(pregunta.respuestasEsperadas, (i) {
             return TextField(
+              style: TextStyle(color: Colors.black),
               onChanged: (value) {
                 if (respuestas[index] == null) {
                   respuestas[index] = List.filled(pregunta.respuestasEsperadas, '');
@@ -79,7 +82,7 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
         return Column(
           children: pregunta.opciones.map((opcion) {
             return RadioListTile(
-              title: Text(opcion),
+              title: Text(opcion,style: TextStyle(color: Colors.black)),
               value: opcion,
               groupValue: respuestas[index]?.first,
               onChanged: (value) {
@@ -94,7 +97,7 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
         return Column(
           children: pregunta.opciones.map((opcion) {
             return RadioListTile(
-              title: Text(opcion),
+              title: Text(opcion,style: TextStyle(color: Colors.black)),
               value: opcion,
               groupValue: respuestas[index]?.first,
               onChanged: (value) {
@@ -136,7 +139,7 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Respuestas correctas: $correctas de ${preguntasProvider.preguntas.length}\n'),
+                Text('Respuestas correctas: $correctas de ${preguntasProvider.preguntas.length}\n',style: const TextStyle(color: Colors.black) ),
                 ...preguntasProvider.preguntas.asMap().entries.map((entry) {
                   final index = entry.key;
                   final pregunta = entry.value;
@@ -146,9 +149,9 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Pregunta ${index + 1}: ${pregunta.enunciado}'),
-                        Text('Tu respuesta: $respuestaUsuario'),
-                        Text('Respuesta correcta: ${pregunta.respuestaCorrecta}\n'),
+                        Text('Pregunta ${index + 1}: ${pregunta.enunciado}',style: const TextStyle(color: Colors.black)),
+                        Text('Tu respuesta: $respuestaUsuario',style: const TextStyle(color: Colors.black)),
+                        Text('Respuesta correcta: ${pregunta.respuestaCorrecta}\n',style: const TextStyle(color: Colors.black)),
                       ],
                     ),
                   );
