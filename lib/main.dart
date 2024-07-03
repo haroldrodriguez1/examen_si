@@ -44,7 +44,7 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
         itemBuilder: (context, index) {
           final pregunta = preguntasProvider.preguntas[index];
           return ListTile(
-            title: Text(pregunta.enunciado),
+            title: Text(pregunta.enunciado,style: TextStyle(color: Colors.black),),
             leading: TextButton(onPressed: (){
               showDialog(context: context, builder: (context)
               {
