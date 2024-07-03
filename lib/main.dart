@@ -35,7 +35,7 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
     final preguntasProvider = Provider.of<PreguntasProvider>(context);
 
     return Scaffold(
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.blue[800],
       appBar: AppBar(
         title: Text('Examen de Sistemas Operativos 1'),
       ),
