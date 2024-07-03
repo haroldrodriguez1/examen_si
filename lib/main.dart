@@ -35,9 +35,9 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
     final preguntasProvider = Provider.of<PreguntasProvider>(context);
 
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.yellow,
       appBar: AppBar(
-        title: Text('Examen de Sistemas Inteligentes para Negocios'),
+        title: Text('Examen de Sistemas Operativos 1'),
       ),
       body: ListView.builder(
         itemCount: preguntasProvider.preguntas.length,
@@ -45,6 +45,15 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
           final pregunta = preguntasProvider.preguntas[index];
           return ListTile(
             title: Text(pregunta.enunciado),
+            leading: TextButton(onPressed: (){
+              showDialog(context: context, builder: (context)
+              {
+                return AlertDialog(
+                  backgroundColor: Colors.blue[900],
+                  title: Text(pregunta.respuestaCorrecta,style: TextStyle(color: Colors.white),),
+                );
+              });
+            }, child: Text("Mostrar\nRespuesta")),
             subtitle: _buildRespuestaWidget(index, pregunta),
           );
         },
