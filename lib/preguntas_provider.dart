@@ -453,7 +453,7 @@ class PreguntasProvider with ChangeNotifier {
         'vf'),
 
     Pregunta(
-        'Dime un sistema sin memoria virtual, el sistema operativo divide la memoria principal en trozos ',
+        'En un sistema sin memoria virtual, el sistema operativo divide la memoria principal en trozos ',
         ['Verdadero', 'Falso'],
         'Verdadero',
         'vf'),
