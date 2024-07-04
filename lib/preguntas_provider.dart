@@ -340,7 +340,7 @@ class PreguntasProviderGrecia with ChangeNotifier {
   List<Pregunta> get preguntas => _preguntas;
 }
 
-class PreguntasProvider with ChangeNotifier {
+class PreguntasProviderCADAN with ChangeNotifier {
   List<Pregunta> _preguntas = [
     // Preguntas de Completación
     Pregunta(
@@ -359,7 +359,7 @@ class PreguntasProvider with ChangeNotifier {
       respuestasEsperadas: 3,
     ),
 
-  /*  Pregunta(
+    /*  Pregunta(
       '',
       [],
       '1. \n2. \n3. \n4. ',
@@ -494,7 +494,7 @@ class PreguntasProvider with ChangeNotifier {
         'Verdadero',
         'vf'),
 
-   // Pregunta('', ['Verdadero', 'Falso'], 'Falso', 'vf'),
+    // Pregunta('', ['Verdadero', 'Falso'], 'Falso', 'vf'),
 
     Pregunta(
         'Los registros de datos contienen direcciones de memoria principal de datos e instrucciones o una parte de la dirección que se utiliza en el cálculo de la dirección efectiva completa. ',
@@ -539,6 +539,232 @@ class PreguntasProvider with ChangeNotifier {
         ],
         'Tabla de Marcos de página ',
         'seleccion_multiple'),
+  ];
+
+  List<Pregunta> get preguntas => _preguntas;
+}
+
+class PreguntasProvider with ChangeNotifier {
+  List<Pregunta> _preguntas = [
+    Pregunta('Los microcontroladores AVR incluyen un procesador RISC de 8 bits',
+        ['Verdadero', 'Falso'], 'Verdadero', 'vf'),
+    Pregunta(
+        'La arquitectura de los microcontroladores AVR es del tipo Von Neumann.',
+        ['Verdadero', 'Falso'],
+        'Falso, son del tipo Hardvard',
+        'vf'),
+    Pregunta(
+        'Los microcontroladores AVR se basan en un núcleo cuya arquitectura fue diseñada por All-Joseph  y Charles Mcgill,',
+        ['Verdadero', 'Falso'],
+        'Falso, la arquitectura fue diseñada por Alf-Egil Bogen y Vegard Wollan',
+        'vf'),
+    Pregunta('El ATMega8 incluye 3 puertos, 2 de 8 bits y 1 de 7 bits',
+        ['Verdadero', 'Falso'], 'Verdadero', 'vf'),
+    Pregunta('el ATMega16 contiene 4 puertos, todos de 6 bits.',
+        ['Verdadero', 'Falso'], 'Falso, sus 4 puertos son de 8 Bits', 'vf'),
+    Pregunta(
+        'La principal función de la CPU es asegurar la correcta ejecución de programas.',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    Pregunta(
+        'El flujo del programa por naturaleza es secuencial, con incrementos automáticos del PC.',
+        ['Verdadero', 'Falso'],
+        'Falso, el flujo si es secuencial',
+        'vf'),
+    Pregunta(
+        'En la SRAM se tienen tres espacios diferentes en un mapa con direccionamiento lineal',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    Pregunta(
+        'El Apuntador de Pila (SP) es un registro de 16 bits que forma parte de los Registros.I/O y que contiene la dirección del tope de la pila.',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    Pregunta(
+        'Para la sincronización de los microcontroladores ATMega8 y ATMega16 se tienen diferentes fuentes de reloj, la selección se realiza por medio de un multiplexor.',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    Pregunta('Un ATMega8 tiene 5 modos de reposo y un ATMega16 tiene 6.',
+        ['Verdadero', 'Falso'], 'Verdadero', 'vf'),
+    Pregunta(
+        ' En los modos de bajo consumo el Modo de ahorro de potencia: sólo se tiene al reloj asíncrono, con su correspondiente oscilador',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    Pregunta(
+        ' En los modos de bajo consumo el Modo de espera: similar al modo de baja potencia, la única diferencia es que en este modo se mantiene el suministro del reloj principa',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    Pregunta(
+        'En los modos de bajo consumo el Modo de espera extendido: similar al modo de ahorro de potencia, la única diferencia es que en este modo también está activo el suministro del reloj principal.',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    Pregunta(
+        'Es la unidad central de procesamiento (CPU), es decir, es el hardware encargado de la captura, decodificación y ejecución de instrucciones.',
+        [],
+        'Nucleo AVR',
+        'completacion'),
+    Pregunta(
+        'El archivo de registros contiene ______ registros de ___ bits de propósito general.',
+        [],
+        '32 registros de 8 Bits...',
+        'completacion'),
+    Pregunta(
+        'es un espacio continuo de memoria Flash cuyo tamaño varía entre los miembros de la familia AVR, para el ATMega8 es de 8 KB y para el ATMega16 es de 16 KB',
+        [],
+        'Memoria de Programa',
+        'completacion'),
+    Pregunta(
+        'Los microcontroladores incluyen dos espacios con tecnologías diferentes: __________________________, para el almacenamiento de variables o datos volátiles, y ____________________, para aquellos datos que se quieren preservar aun en ausencia de energía.',
+        [],
+        'un espacio de SRAM de 1120 bytes..... y un espacio de EEPROM de 512 bytes',
+        'completacion'),
+    Pregunta(
+        ' se utilizan para definir la configuración, realizar el control o monitorear el estado de los recursos internos.',
+        [],
+        'Registros I/O',
+        'completacion'),
+    Pregunta(
+        'es parte de los Registros I/O. Este registro es importante debido a que refleja el estado de la CPU y no de algún recurso específico.',
+        [
+          'A. Apuntador de Pila',
+          'B. Registro de Estado. ',
+          'C.Registros Del hardware. ',
+          'Registro I/O',
+          'ESPACIO DE EEPROM',
+        ],
+        'Registro de Estado',
+        'seleccion_multiple'),
+    Pregunta(
+        'El espacio de propósito general queda disponible para:',
+        [
+          'Variables Simples',
+          'Variables Compuestas ',
+          'Para La Pila de datos temporales',
+          'Todas son Correctas'
+        ],
+        'Todas son Correctas',
+        'seleccion_multiple'),
+    Pregunta(
+        'En los microcontroladores AVR se tienen diferentes fuentes de Interrupción:',
+        [
+          'Una interrupción por inicialización o Reset.',
+          ' Dos interrupciones externas (tres en el ATMega16).',
+          'Siete interrupciones por los temporizadores (ocho en el ATMega16), pueden ser por comparación, captura o desbordamiento. ',
+          'Todas son Correctas'
+        ],
+        'Todas son Correctas',
+        'seleccion_multiple'),
+    Pregunta(
+        'Si en un programa se utilizan las interrupciones, se requiere:',
+        [
+          ' Configurar el recurso o recursos para monitorear el evento o eventos',
+          ' Habilitar a la interrupción o interrupciones',
+          ' Continuar con la ejecución normal de la aplicación',
+          'Todas son Correctas'
+        ],
+        'Todas son Correctas',
+        'seleccion_multiple'),
+    Pregunta(
+        'Una causa o causas de inicialización de Reset es:',
+        [
+          'A. Reset Externo',
+          'B. Reset por Watchdog',
+          'C. Reset por contaminación electromagnética',
+          'D. Full Moon Influence Reset',
+          'E. UFO Sighting Reset',
+          'A y B',
+          'A y D'
+        ],
+        'A y B, las causas serian  Reset de Encendido (Power-on Reset)• Reset Externo • Reset por Watchdog• Reset por reducción de voltaje (Brown out)• Reset por JTAG ',
+        'seleccion_multiple'),
+    /* Pregunta(
+        '',
+        [
+          '',
+          ' ',
+          ' ',
+        ],
+        '',
+        'seleccion_multiple'),*/
+    Pregunta(
+        ' es un espacio para el almacenamiento temporal de variables, el cual está implementado dentro de la SRAM de propósito general.',
+        [],
+        'La Pila',
+        'completacion'),
+    Pregunta(
+        'es un espacio no volátil para el almacenamiento de datos, cuyo tamaño varía en los diferentes integrantes de la familia AVR.',
+        [],
+        'La EEPROM',
+        'completacion'),
+    Pregunta(
+      'Una memoria de cualquier tipo requiere de 3 buses para su manejo:',
+      [],
+      '1.  Un bus de datos  \n2.  Un bus de direcciones   \n3. Un bus de control ',
+      'enumeracion',
+      respuestasEsperadas: 3,
+    ),
+    Pregunta(
+      'Las señales de reloj son:',
+      [],
+      '1.  clkCPU  \n2.   clkFLASH   \n3. clkADC \n4.  clkI/O \n5. clkASY',
+      'enumeracion',
+      respuestasEsperadas: 5,
+    ),
+    Pregunta(
+        'proporcionan el mecanismo por medio del cual un microcontrolador se comunica con su entorno.',
+        [],
+        'Puertos de entrada/salida',
+        'completacion'),
+    Pregunta(
+      'Para el manejo de cada puerto se requiere de 3 registros del espacio de Registros I/O, éstos son:',
+      [],
+      '1. PORTx   \n2. DDRx    \n3. PINx ',
+      'enumeracion',
+      respuestasEsperadas: 3,
+    ),
+    /* Pregunta(
+      '',
+      [],
+      '1.    \n2.     \n3. ',
+      'enumeracion',
+      respuestasEsperadas: 3,
+    ),*/
+    Pregunta(
+        'es la ocurrencia de un evento producido por algún recurso del microcontrolador, que ocasiona la suspensión temporal del programa principal.',
+        [],
+        'Una Interrupcion',
+        'completacion'),
+    Pregunta(
+        'La _____________ o ________________ de un microcontrolador es fundamental para su operación adecuada, porque garantiza que sus registros internos van a tener un valor inicial conocido.',
+        [],
+        'inicialización o Reset',
+        'completacion'),
+    Pregunta(
+        ' permiten el ahorro de energía al “apagar” módulos de un MCU, cuyo uso no es requerido en un sistema',
+        [],
+        'modos de bajo consumo',
+        'completacion'),
+    Pregunta(
+        'En este modo de bajo consumo todos los recursos del MCU trabajan, pero la CPU no ejecuta instrucciones porque no tienen señal de reloj.',
+        [],
+        'Modo Ocioso',
+        'completacion'),
+    Pregunta(
+        ' En este modo de bajo consumo únicamente trabaja el ADC y el oscilador asíncrono para el temporizador 2.',
+        [],
+        'Modo de reducción de ruido en el ADC',
+        'completacion'),
+    Pregunta(
+        'En este modo de bajo consumo no hay reloj en los módulos de recursos y tampoco están activas las fuentes de oscilación, por lo tanto, es el modo con el menor consumo de energía',
+        [],
+        'Modo de baja potencia',
+        'completacion'),
   ];
 
   List<Pregunta> get preguntas => _preguntas;
