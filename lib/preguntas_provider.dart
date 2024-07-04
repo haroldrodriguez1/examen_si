@@ -568,7 +568,7 @@ class PreguntasProvider with ChangeNotifier {
         'Verdadero',
         'vf'),
     Pregunta(
-        'El flujo del programa por naturaleza es secuencial, con incrementos automáticos del PC.',
+        'El flujo del programa por naturaleza no es secuencial, con incrementos automáticos del PC.',
         ['Verdadero', 'Falso'],
         'Falso, el flujo si es secuencial',
         'vf'),
