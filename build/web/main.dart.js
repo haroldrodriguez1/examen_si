@@ -40170,7 +40170,7 @@ J(a){return new A.vy(new A.ur(null),null)}}
 A.ur.prototype={
 an(){return new A.zq(A.B(t.S,t.yp),B.k)}}
 A.zq.prototype={
-J(a){var s=null,r=A.ako(a,!0,t.Gv),q=A.dC("Examen de Sistemas Operativos 1",s,s,s,s,s,s),p=!0
+J(a){var s=null,r=A.ako(a,!0,t.Gv),q=A.dC("Examen de Microcontroladores",s,s,s,s,s,s),p=!0
 p=p?B.y8:s
 return new A.x4(new A.td(q,new A.Nt(s,s,1/0,56),s),new A.FG(new A.a37(new A.a7s(this,r),36,!0,!0,!0,s),s,B.aP,!1,s,s,p,!1,s,36,B.ap,B.Il,s,B.ao,s),A.aj2(A.af4(B.Cb,s),!1,this.gZ1()),B.l5,s)},
 YS(a,b){var s,r,q,p,o,n=this,m=null
