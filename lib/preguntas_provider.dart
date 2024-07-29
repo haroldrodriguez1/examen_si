@@ -14,331 +14,7 @@ class Pregunta {
       {this.respuestasEsperadas = 1});
 }
 
-class PreguntasProviderGrecia with ChangeNotifier {
-  List<Pregunta> _preguntas = [
-    // Preguntas de Completación
-    Pregunta(
-      'Power BI consta de:',
-      [],
-      '1. Aplicación de Windows\n2. Servicio SaaS\n3. Aplicaciones móviles\n4. Power BI Report Server',
-      'enumeracion',
-      respuestasEsperadas: 4,
-    ),
-    Pregunta(
-      'Roles de los usuarios Power BI',
-      [],
-      '1. Consumidor\n2. Diseñador\n3. Administrador\n4. Desarrollador',
-      'enumeracion',
-      respuestasEsperadas: 4,
-    ),
 
-    Pregunta(
-        'En Power BI, el término _______ hace referencia a las aplicaciones, los paneles y los informes.',
-        [],
-        'contenido',
-        'completacion'),
-
-    Pregunta('Conjunto de iconos que cuentan una historia.', [], 'paneles',
-        'completacion'),
-
-    Pregunta('Elementos gráficos de objetos que representa la información.', [],
-        'informes', 'completacion'),
-
-    Pregunta(
-        'Empaquetado de un conjunto de informes y paneles para la distribución a un grupo grande de usuarios',
-        [],
-        'aplicaciones',
-        'completacion'),
-
-    Pregunta(
-        ' son las colecciones de datos que se han importado desde las diversas fuentes y que tienen relación entre ellos.',
-        [],
-        'conjuntos de datos',
-        'completacion'),
-
-    Pregunta(
-        ' son un conjunto de datos especial, usado cuando se conecta (no se importa) a un archivo Excel.',
-        [],
-        'los libros',
-        'completacion'),
-
-    Pregunta(' ayudan a unificar los datos provenientes de orígenes dispares',
-        [], 'flujos de datos', 'completacion'),
-
-    Pregunta(
-        'es una aplicación gratuita que se puede instalar en el equipo local y que le permite conectarse a los datos, transformarlos y visualizarlos.',
-        [],
-        'power BI desktop',
-        'completacion'),
-
-    Pregunta(
-      'Los usos más comunes de Power BI Desktop son los siguientes:',
-      [],
-      '1.  Conectar a datos\n2. Transformar y limpiar datos\n3. Crear objetos visuales\n4. Crear informes que son colecciones de objetos visuales\n5. Compartir informes con otros usuarios mediante el servicio Power BI',
-      'enumeracion',
-      respuestasEsperadas: 5,
-    ),
-
-    Pregunta(
-      'Hay tres vistas en Power BI:',
-      [],
-      '1.  Vista de informe\n2.  Vista de datos\n3.  Vista de modelo',
-      'enumeracion',
-      respuestasEsperadas: 3,
-    ),
-
-    Pregunta(
-      'Enumere 6 elementos de un informe',
-      [],
-      '1.  Texto\n2.  Tablas\n3.  Graficos\n4.  Mapas\n5.  Metricas\n6.  Alertas visuales y automaticas',
-      'enumeracion',
-      respuestasEsperadas: 3,
-    ),
-
-    Pregunta(
-      'Tipos de Metricas',
-      [],
-      '1.  leading\n2.  lagging',
-      'enumeracion',
-      respuestasEsperadas: 2,
-    ),
-    Pregunta(
-      'Para elegir un grafico es necesario seguir un proceso sistematico a traves de una serie de preguntas',
-      [],
-      '1.  Que se desea mostrar?\n2.  Cuantas variables tenemos?\n3. Es estatico o cambia en el tiempo?',
-      'enumeracion',
-      respuestasEsperadas: 3,
-    ),
-    Pregunta(
-      'El ciclo de vida de un informe se compone de las siguientes etapas',
-      [],
-      '1.  Identificar\n2.  Medir\n3. Revisar\n4.  Crear\n5.  Recopilar\n6. Mejorar',
-      'enumeracion',
-      respuestasEsperadas: 6,
-    ),
-    Pregunta(
-      'El uso del grafico va a depender del tipo de dato, que podemos clasificar en:',
-      [],
-      '1.  cualitativo\n2.  cuantitativo',
-      'enumeracion',
-      respuestasEsperadas: 2,
-    ),
-
-    Pregunta(
-        'significa Expresiones de análisis de datos y es el lenguaje de fórmulas usado en Power BI.',
-        [],
-        'DAX',
-        'completacion'),
-
-    Pregunta(
-        'Se entiende por _____ la representacion visual de una serie de datos',
-        [],
-        'grafico',
-        'completacion'),
-
-    Pregunta('Que son los Paneles', [],
-        'Conjunto de iconos que cuentan una historia.', 'completacion'),
-
-    Pregunta(
-        'Que son los Informes',
-        [],
-        'Elementos gráficos de objetos que representa la información.',
-        'completacion'),
-
-    Pregunta(
-        'Que son las Aplicaciones ',
-        [],
-        'Empaquetado de un conjunto de informes y paneles para la distribución a un grupo grande de usuarios',
-        'completacion'),
-
-    Pregunta(
-        ' Que son los conjuntos de Datos',
-        [],
-        'son las colecciones de datos que se han importado desde las diversas fuentes y que tienen relación entre ellos.',
-        'completacion'),
-
-    Pregunta(
-        'Que son los libros  ',
-        [],
-        'son un conjunto de datos especial, usado cuando se conecta (no se importa) a un archivo Excel.',
-        'completacion'),
-
-    Pregunta(
-        ' Que son los Flujos de Datos',
-        [],
-        'ayudan a unificar los datos provenientes de orígenes dispares',
-        'completacion'),
-
-    Pregunta(
-        'Power BI Desktop es una herramienta completa de creación de informes y análisis de datos que se instala en el equipo local. (V/F)',
-        ['Verdadero', 'Falso'],
-        'Verdadero',
-        'vf'),
-
-    Pregunta(
-        'Un informe es un documento por medio del cual se presentan los resultados de uno o varios procesos de negocio. (V/F)',
-        ['Verdadero', 'Falso'],
-        'Verdadero',
-        'vf'),
-    Pregunta(
-        'se entiende por plataforma de reporting aquellas soluciones que permiten diseñar y gestionar informes en el contexto de una organizacion o una de sus areas',
-        ['Verdadero', 'Falso'],
-        'Verdadero',
-        'vf'),
-
-    // Preguntas para el Diseño de Informes
-    Pregunta(
-        '¿Qué tipo de grafico se necesita para representar graficamente en un eje cartesiano de las frecuencias de una variable cualitativa o discreta?',
-        [
-          'Gráfico de barras',
-          'Gráfico de líneas',
-          'Histograma',
-          'Mapa de calor'
-        ],
-        'Gráfico de barras',
-        'seleccion_multiple'),
-
-    Pregunta(
-        '¿Qué tipo de grafico se necesita para representar las frecuencias de una variable cuantitativa continua?',
-        [
-          'Gráfico de barras',
-          'Gráfico de líneas',
-          'Histograma',
-          'Mapa de calor'
-        ],
-        'Histograma',
-        'seleccion_multiple'),
-
-    Pregunta(
-        '¿Qué tipo de grafica se necesita para la representacion grafica en un eje cartesiano de la relacion que existe entre 2 variables?',
-        [
-          'Gráfico de barras',
-          'Gráfico de líneas',
-          'Histograma',
-          'Mapa de calor'
-        ],
-        'Gráfico de líneas',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Grafico de barras vertical ordenado por frecuencias de forma descendente que identifica y da un orden y prioridad a los datos',
-        [
-          'Gráfico de barras',
-          'Gráfico de líneas',
-          'Grafico de Pareto',
-          'Mapa de calor'
-        ],
-        'Grafico de Pareto',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Grafico que es una representacion circular de las frecuencias relativas de una variable cualitativa o discreta que permite de una manera sencilla y rapida, su comparacion',
-        [
-          'Gráfico de dispersoin',
-          'Gráfico de líneas',
-          'Grafico de Sectores',
-          'Mapa de calor'
-        ],
-        'Grafico de Sectores',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Grafico que representa mediante figuras o simbolos las frecuencias de una variable cualitativa o discreta',
-        [
-          'Gráfico de Sectores',
-          'Gráfico de burbujas',
-          'Grafico de Pareto',
-          'Pictograma'
-        ],
-        'Pictograma',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Grafico que muestra en un eje cartesiano la relacion que existe entre dos variables e informa del grado de correlacion entre ellas',
-        [
-          'Gráfico de Sectores',
-          'Gráfico de dispersion',
-          'Grafico de Pareto',
-          'Mapa de calor'
-        ],
-        'Grafico de dispersion',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Un Cartograma es:',
-        [
-          'Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan',
-          'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos',
-          'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos',
-          'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'
-        ],
-        'Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Un Grafico en cascada es:',
-        [
-          'Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan',
-          'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos',
-          'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos',
-          'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'
-        ],
-        'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Un Diagrama de caja es:',
-        [
-          'Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan',
-          'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos',
-          'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos',
-          'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'
-        ],
-        'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Un Mapa de Calor es:',
-        [
-          'Un mapa en el que se presentan datos por regiones bien poniendo el numero o bien coloreando las distintas zonas en funcion del dato que represetan',
-          'Un tipo de grafico que normalmente es usado para comprender como un valor inicial se ve afectado por una serie de cambios intermedios positivos y negativos',
-          'Es un tipo de grafico que utiliza los cuartiles para representar un conjunto de datos',
-          'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores'
-        ],
-        'es una representacion grafica de los datos donde los valores individuales contenidos en una matriz se representan como colores',
-        'seleccion_multiple'),
-
-    Pregunta(
-        'Tipos de Informes',
-        ['Estaticos', 'Parametricos', 'Ad hoc', 'Todas son correctas'],
-        'Todas son correctas',
-        'seleccion_multiple'),
-
-    Pregunta(
-        '¿Qué es un indicador clave de rendimiento (KPI)?',
-        [
-          'Una medida que se utiliza para medir el éxito de un objetivo',
-          'Una meta que se quiere alcanzar',
-          'Una estrategia que se implementa',
-          'Un proceso que se realiza'
-        ],
-        'Una medida que se utiliza para medir el éxito de un objetivo',
-        'seleccion_multiple'),
-
-    Pregunta(
-        '¿Qué es un indicador de metas (KGI)?',
-        [
-          'Una medida que se utiliza para medir el éxito de un objetivo',
-          'Definen mediciones para informar a la Direccion General si un proceso ha alcanzado sus requisitos',
-          'Una estrategia que se implementa',
-          'Un proceso que se realiza'
-        ],
-        'Definen mediciones para informar a la Direccion General si un proceso ha alcanzado sus requisitos',
-        'seleccion_multiple'),
-  ];
-
-  List<Pregunta> get preguntas => _preguntas;
-}
 
 class PreguntasProviderCADAN with ChangeNotifier {
   List<Pregunta> _preguntas = [
@@ -546,225 +222,408 @@ class PreguntasProviderCADAN with ChangeNotifier {
 
 class PreguntasProvider with ChangeNotifier {
   List<Pregunta> _preguntas = [
-    Pregunta('Los microcontroladores AVR incluyen un procesador RISC de 8 bits',
-        ['Verdadero', 'Falso'], 'Verdadero', 'vf'),
     Pregunta(
-        'La arquitectura de los microcontroladores AVR es del tipo Von Neumann.',
-        ['Verdadero', 'Falso'],
-        'Falso, son del tipo Hardvard',
-        'vf'),
+    "¿Qué es la minería de datos?",
+    ["Un proceso de recopilación de datos brutos", "Una técnica para transformar datos en bruto en conocimiento práctico", "El almacenamiento de datos en grandes bases de datos", "Un método para visualizar datos a través de gráficos"],
+    "Una técnica para transformar datos en bruto en conocimiento práctico",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Cuál es el objetivo principal de la minería de datos?",
+    ["Extraer datos de diferentes fuentes", "Descubrir patrones y relaciones ocultas en grandes conjuntos de datos", "Guardar datos en un almacenamiento de datos", "Analizar datos mediante gráficos y tablas"],
+    "Descubrir patrones y relaciones ocultas en grandes conjuntos de datos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué significa el término 'minería de datos'?",
+    ["Extraer datos brutos", "Buscar significado o conocimiento valioso en datos existentes", "Recopilar datos de diferentes orígenes", "Transformar datos en gráficos y tablas"],
+    "Buscar significado o conocimiento valioso en datos existentes",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Cuál es el primer paso en el proceso habitual de minería de datos?",
+    ["Almacenamiento de datos", "Recopilación de datos", "Análisis de datos", "Minería de datos"],
+    "Recopilación de datos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "En el proceso de minería de datos, ¿qué implica la fase de almacenamiento de datos?",
+    ["Guardar datos en una gran base de datos o almacenamiento de datos", "Capturar datos de diversas fuentes", "Procesar y analizar los datos con programas complejos", "Transformar datos en bruto en conocimiento útil"],
+    "Guardar datos en una gran base de datos o almacenamiento de datos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué se realiza durante la fase de análisis de datos?",
+    ["Recopilar datos de diferentes fuentes", "Limpiar, integrar y dar formato a los datos", "Procesar, almacenar y analizar datos mediante software y algoritmos", "Generar informes de inteligencia empresarial"],
+    "Procesar, almacenar y analizar datos mediante software y algoritmos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué implica la fase de preparación de datos en la minería de datos?",
+    ["Limpiar, integrar y dar formato a los datos", "Analizar patrones ocultos en los datos", "Almacenar datos en una base de datos centralizada", "Entrenar modelos de machine learning"],
+    "Limpiar, integrar y dar formato a los datos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué se busca en la fase de modelado de datos en minería de datos?",
+    ["Entrenar modelos de machine learning y analizar resultados", "Recopilar y almacenar datos", "Limpiar y dar formato a los datos", "Evaluar la calidad de los datos"],
+    "Entrenar modelos de machine learning y analizar resultados",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué se evalúa durante la fase de evaluación en minería de datos?",
+    ["Los datos brutos recopilados", "La calidad de los modelos y su alineación con los objetivos empresariales", "La forma en que los datos son almacenados", "La preparación de los datos para el modelado"],
+    "La calidad de los modelos y su alineación con los objetivos empresariales",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué ocurre en la fase de implementación del proceso de minería de datos?",
+    ["El modelo es utilizado para generar inteligencia empresarial", "Los datos son limpios y preparados", "Se entrenan modelos de machine learning", "Se recopilan datos de diferentes fuentes"],
+    "El modelo es utilizado para generar inteligencia empresarial",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué técnica de minería de datos busca encontrar relaciones entre dos conjuntos de datos diferentes?",
+    ["Clasificación", "Agrupación en clústeres", "Minería de reglas de asociación", "Análisis de secuencias y trayectorias"],
+    "Minería de reglas de asociación",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Cuál es la técnica que clasifica datos en diferentes categorías utilizando métodos estadísticos?",
+    ["Agrupación en clústeres", "Minería de reglas de asociación", "Clasificación", "Análisis de secuencias y trayectorias"],
+    "Clasificación",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué técnica de minería de datos agrupa puntos de datos basándose en sus similitudes?",
+    ["Minería de reglas de asociación", "Clasificación", "Agrupación en clústeres", "Análisis de secuencias y trayectorias"],
+    "Agrupación en clústeres",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué técnica de minería de datos busca patrones en secuencias de eventos o valores que conducen a otros eventos?",
+    ["Clasificación", "Agrupación en clústeres", "Minería de reglas de asociación", "Análisis de secuencias y trayectorias"],
+    "Análisis de secuencias y trayectorias",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué es la minería de procesos?",
+    ["Una técnica para encontrar patrones en datos textuales", "Un método para detectar y mejorar procesos empresariales mediante el análisis de registros de eventos", "Una técnica para clasificar datos en categorías específicas", "Un proceso para predecir tendencias basadas en datos históricos"],
+    "Un método para detectar y mejorar procesos empresariales mediante el análisis de registros de eventos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué implica la minería de textos?",
+    ["Automatizar el descubrimiento de conocimientos en textos escritos como correos electrónicos y artículos", "Agrupar datos en clústeres basándose en similitudes", "Predecir tendencias futuras basadas en datos históricos", "Encontrar relaciones entre conjuntos de datos diferentes"],
+    "Automatizar el descubrimiento de conocimientos en textos escritos como correos electrónicos y artículos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué hace la minería predictiva?",
+    ["Estudia el impacto de decisiones empresariales futuras para elegir las opciones más eficaces", "Agrupa puntos de datos similares", "Encuentra patrones en secuencias de eventos", "Clasifica datos en diferentes categorías"],
+    "Estudia el impacto de decisiones empresariales futuras para elegir las opciones más eficaces",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Cuál es la primera fase del proceso CRISP-DM?",
+    ["Comprensión del negocio", "Comprensión de los datos", "Preparación de los datos", "Modelado de datos"],
+    "Comprensión del negocio",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué implica la fase de 'Comprensión de los datos' en CRISP-DM?",
+    ["Realizar un análisis preliminar y explorar los datos", "Definir los objetivos de la minería de datos", "Limpiar y dar formato a los datos", "Entrenar modelos de machine learning"],
+    "Realizar un análisis preliminar y explorar los datos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿En qué fase del CRISP-DM se limpia, integra y da formato a los datos?",
+    ["Comprensión del negocio", "Comprensión de los datos", "Preparación de los datos", "Modelado de datos"],
+    "Preparación de los datos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué fase del CRISP-DM involucra entrenar y ajustar modelos de machine learning?",
+    ["Comprensión del negocio", "Comprensión de los datos", "Preparación de los datos", "Modelado de datos"],
+    "Modelado de datos",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Cuál es el objetivo de la fase de 'Evaluación' en CRISP-DM?",
+    ["Medir los modelos con respecto a los objetivos empresariales y obtener retroalimentación", "Limpiar y preparar los datos", "Entrenar los modelos de machine learning", "Implementar el modelo en la práctica"],
+    "Medir los modelos con respecto a los objetivos empresariales y obtener retroalimentación",
+    "seleccion_multiple",
+  ),
+  Pregunta(
+    "¿Qué se hace durante la fase de 'Implementación' en CRISP-DM?",
+    ["Utilizar el modelo para generar inteligencia empresarial y entrenar a los usuarios", "Limpiar y dar formato a los datos", "Entrenar modelos de machine learning", "Evaluar la calidad de los modelos"],
+    "Utilizar el modelo para generar inteligencia empresarial y entrenar a los usuarios",
+    "seleccion_multiple",
+  ),
     Pregunta(
-        'Los microcontroladores AVR se basan en un núcleo cuya arquitectura fue diseñada por All-Joseph  y Charles Mcgill,',
-        ['Verdadero', 'Falso'],
-        'Falso, la arquitectura fue diseñada por Alf-Egil Bogen y Vegard Wollan',
-        'vf'),
-    Pregunta('El ATMega8 incluye 3 puertos, 2 de 8 bits y 1 de 7 bits',
-        ['Verdadero', 'Falso'], 'Verdadero', 'vf'),
-    Pregunta('el ATMega16 contiene 4 puertos, todos de 6 bits.',
-        ['Verdadero', 'Falso'], 'Falso, sus 4 puertos son de 8 Bits', 'vf'),
-    Pregunta(
-        'La principal función de la CPU es asegurar la correcta ejecución de programas.',
+        'Xplenty es una plataforma de integración de datos en la nube.',
         ['Verdadero', 'Falso'],
         'Verdadero',
         'vf'),
     Pregunta(
-        'El flujo del programa por naturaleza no es secuencial, con incrementos automáticos del PC.',
+        'Xplenty no ofrece automatización de procesos.',
         ['Verdadero', 'Falso'],
-        'Falso, el flujo si es secuencial',
+        'Falso, permite programar y automatizar flujos de trabajo de datos.',
         'vf'),
     Pregunta(
-        'En la SRAM se tienen tres espacios diferentes en un mapa con direccionamiento lineal',
-        ['Verdadero', 'Falso'],
-        'Verdadero',
-        'vf'),
-    Pregunta(
-        'El Apuntador de Pila (SP) es un registro de 16 bits que forma parte de los Registros.I/O y que contiene la dirección del tope de la pila.',
+        'Dundas BI proporciona información en tiempo real.',
         ['Verdadero', 'Falso'],
         'Verdadero',
         'vf'),
     Pregunta(
-        'Para la sincronización de los microcontroladores ATMega8 y ATMega16 se tienen diferentes fuentes de reloj, la selección se realiza por medio de un multiplexor.',
+        'Teradata es una plataforma cerrada y no admite múltiples almacenes de datos.',
         ['Verdadero', 'Falso'],
-        'Verdadero',
-        'vf'),
-    Pregunta('Un ATMega8 tiene 5 modos de reposo y un ATMega16 tiene 6.',
-        ['Verdadero', 'Falso'], 'Verdadero', 'vf'),
-    Pregunta(
-        ' En los modos de bajo consumo el Modo de ahorro de potencia: sólo se tiene al reloj asíncrono, con su correspondiente oscilador',
-        ['Verdadero', 'Falso'],
-        'Verdadero',
+        'Falso, es un sistema de gestión de bases de datos de código abierto y admite múltiples almacenes de datos.',
         'vf'),
     Pregunta(
-        ' En los modos de bajo consumo el Modo de espera: similar al modo de baja potencia, la única diferencia es que en este modo se mantiene el suministro del reloj principa',
+        'Orange Data Mining se desarrolló inicialmente en un lenguaje de programación diferente al Java.',
         ['Verdadero', 'Falso'],
         'Verdadero',
         'vf'),
     Pregunta(
-        'En los modos de bajo consumo el Modo de espera extendido: similar al modo de ahorro de potencia, la única diferencia es que en este modo también está activo el suministro del reloj principal.',
+        'WEKA fue desarrollado en la Universidad de Oxford.',
+        ['Verdadero', 'Falso'],
+        'Falso, fue desarrollado en la Universidad de Waikato.',
+        'vf'),
+    Pregunta(
+        'Revolution es ahora conocido como Microsoft R Open y Microsoft R Server.',
         ['Verdadero', 'Falso'],
         'Verdadero',
         'vf'),
     Pregunta(
-        'Es la unidad central de procesamiento (CPU), es decir, es el hardware encargado de la captura, decodificación y ejecución de instrucciones.',
+        'Xplenty no ofrece integración con múltiples fuentes de datos.',
+        ['Verdadero', 'Falso'],
+        'Falso, Xplenty ofrece integración con diversas fuentes de datos como bases de datos SQL, NoSQL, y servicios en la nube.',
+        'vf'),
+    Pregunta(
+        'Dundas BI no permite la personalización de tableros de control.',
+        ['Verdadero', 'Falso'],
+        'Falso, permite crear y personalizar tableros de control.',
+        'vf'),
+    Pregunta(
+        'Teradata fue fundado en la década de 1980.',
+        ['Verdadero', 'Falso'],
+        'Verdadero',
+        'vf'),
+    
+    // Completion questions
+    Pregunta(
+        'Xplenty ofrece una interfaz gráfica de usuario que simplifica la creación de flujos de trabajo de _____________.',
         [],
-        'Nucleo AVR',
+        'integración de datos',
         'completacion'),
     Pregunta(
-        'El archivo de registros contiene ______ registros de ___ bits de propósito general.',
+        'Dundas BI permite crear y personalizar ____________ e ____________.',
         [],
-        '32 registros de 8 Bits...',
+        'tableros de control, informes',
         'completacion'),
     Pregunta(
-        'es un espacio continuo de memoria Flash cuyo tamaño varía entre los miembros de la familia AVR, para el ATMega8 es de 8 KB y para el ATMega16 es de 16 KB',
+        'Teradata soporta más de __________ petabytes de datos.',
         [],
-        'Memoria de Programa',
+        '50',
         'completacion'),
     Pregunta(
-        'Los microcontroladores incluyen dos espacios con tecnologías diferentes: __________________________, para el almacenamiento de variables o datos volátiles, y ____________________, para aquellos datos que se quieren preservar aun en ausencia de energía.',
+        'Orange Data Mining proporciona herramientas para __________ de texto.',
         [],
-        'un espacio de SRAM de 1120 bytes..... y un espacio de EEPROM de 512 bytes',
+        'análisis',
         'completacion'),
     Pregunta(
-        ' se utilizan para definir la configuración, realizar el control o monitorear el estado de los recursos internos.',
+        'WEKA incluye herramientas para el ___________ de datos en los ejes cartesianos.',
         [],
-        'Registros I/O',
+        'visualización',
         'completacion'),
     Pregunta(
-        'es parte de los Registros I/O. Este registro es importante debido a que refleja el estado de la CPU y no de algún recurso específico.',
+        'Revolution permite realizar análisis estadísticos y de minería de datos utilizando el lenguaje de programación ___________.',
+        [],
+        'R',
+        'completacion'),
+    Pregunta(
+        'Xplenty soporta la integración de datos en tiempo real y por lotes a través de ___________.',
+        [],
+        'ETL y ELT',
+        'completacion'),
+    Pregunta(
+        'Dundas BI fue adquirido por una empresa llamada ____________.',
+        [],
+        'Insightsoftware',
+        'completacion'),
+    Pregunta(
+        'Teradata utiliza la tecnología de base de datos ___________ para proporcionar análisis rápidos y escalables.',
+        [],
+        'paralela',
+        'completacion'),
+    Pregunta(
+        'Orange Data Mining es una herramienta ___________ para el análisis y la visualización de datos.',
+        [],
+        'open-source',
+        'completacion'),
+    Pregunta(
+        'La primera versión de WEKA fue desarrollada en un front-end __________.',
+        [],
+        'TCL/TK',
+        'completacion'),
+    Pregunta(
+        'Revolution Analytics fue adquirida por ___________ en 2015.',
+        [],
+        'Microsoft',
+        'completacion'),
+    
+    // Multiple choice questions
+    Pregunta(
+        'Una de las principales funciones de Xplenty es:',
         [
-          'A. Apuntador de Pila',
-          'B. Registro de Estado. ',
-          'C.Registros Del hardware. ',
-          'Registro I/O',
-          'ESPACIO DE EEPROM',
+          'A. Minería de datos',
+          'B. Integración de datos en la nube',
+          'C. Visualización de datos',
+          'D. Análisis de sentimiento'
         ],
-        'Registro de Estado',
+        'B. Integración de datos en la nube',
         'seleccion_multiple'),
     Pregunta(
-        'El espacio de propósito general queda disponible para:',
+        'Dundas BI es conocido por:',
         [
-          'Variables Simples',
-          'Variables Compuestas ',
-          'Para La Pila de datos temporales',
-          'Todas son Correctas'
+          'A. Proveer información en tiempo real',
+          'B. Ser una plataforma de minería de datos',
+          'C. Soportar múltiples almacenes de datos',
+          'D. Ser una herramienta para análisis de texto'
         ],
-        'Todas son Correctas',
+        'A. Proveer información en tiempo real',
         'seleccion_multiple'),
     Pregunta(
-        'En los microcontroladores AVR se tienen diferentes fuentes de Interrupción:',
+        'Teradata está orientado a:',
         [
-          'Una interrupción por inicialización o Reset.',
-          ' Dos interrupciones externas (tres en el ATMega16).',
-          'Siete interrupciones por los temporizadores (ocho en el ATMega16), pueden ser por comparación, captura o desbordamiento. ',
-          'Todas son Correctas'
+          'A. Almacenamiento de datos',
+          'B. Análisis de texto',
+          'C. Visualización de datos',
+          'D. Aprendizaje automático'
         ],
-        'Todas son Correctas',
+        'A. Almacenamiento de datos',
         'seleccion_multiple'),
     Pregunta(
-        'Si en un programa se utilizan las interrupciones, se requiere:',
+        'Orange Data Mining fue desarrollado por:',
         [
-          ' Configurar el recurso o recursos para monitorear el evento o eventos',
-          ' Habilitar a la interrupción o interrupciones',
-          ' Continuar con la ejecución normal de la aplicación',
-          'Todas son Correctas'
+          'A. Universidad de Oxford',
+          'B. Universidad de Ljubljana',
+          'C. Universidad de Waikato',
+          'D. Universidad de Harvard'
         ],
-        'Todas son Correctas',
+        'B. Universidad de Ljubljana',
         'seleccion_multiple'),
     Pregunta(
-        'Una causa o causas de inicialización de Reset es:',
+        'WEKA recibió el galardón “Data Mining and Knowledge Discovery Service” en:',
         [
-          'A. Reset Externo',
-          'B. Reset por Watchdog',
-          'C. Reset por contaminación electromagnética',
-          'D. Full Moon Influence Reset',
-          'E. UFO Sighting Reset',
-          'A y B',
-          'A y D'
+          'A. 2000',
+          'B. 2005',
+          'C. 2010',
+          'D. 2015'
         ],
-        'A y B, las causas serian  Reset de Encendido (Power-on Reset)• Reset Externo • Reset por Watchdog• Reset por reducción de voltaje (Brown out)• Reset por JTAG ',
+        'B. 2005',
         'seleccion_multiple'),
-    /* Pregunta(
-        '',
+    Pregunta(
+        'Revolution es ahora parte del ecosistema de herramientas de análisis de datos de:',
         [
-          '',
-          ' ',
-          ' ',
+          'A. Google',
+          'B. IBM',
+          'C. Microsoft',
+          'D. Amazon'
         ],
-        '',
-        'seleccion_multiple'),*/
+        'C. Microsoft',
+        'seleccion_multiple'),
     Pregunta(
-        ' es un espacio para el almacenamiento temporal de variables, el cual está implementado dentro de la SRAM de propósito general.',
-        [],
-        'La Pila',
-        'completacion'),
+        'Xplenty es conocido por su capacidad de:',
+        [
+          'A. Minería de datos',
+          'B. Integración de datos y automatización de flujos de trabajo',
+          'C. Visualización de datos en tiempo real',
+          'D. Análisis de texto'
+        ],
+        'B. Integración de datos y automatización de flujos de trabajo',
+        'seleccion_multiple'),
     Pregunta(
-        'es un espacio no volátil para el almacenamiento de datos, cuyo tamaño varía en los diferentes integrantes de la familia AVR.',
-        [],
-        'La EEPROM',
-        'completacion'),
+        'Dundas BI permite:',
+        [
+          'A. Crear informes y tableros de control personalizados',
+          'B. Analizar datos de sensores',
+          'C. Modelar enfermedades infecciosas',
+          'D. Realizar optimización de sistemas'
+        ],
+        'A. Crear informes y tableros de control personalizados',
+        'seleccion_multiple'),
     Pregunta(
-      'Una memoria de cualquier tipo requiere de 3 buses para su manejo:',
+        'Teradata es utilizada principalmente para:',
+        [
+          'A. Almacenamiento de datos y análisis a gran escala',
+          'B. Análisis de datos censales',
+          'C. Evaluación de programas educativos',
+          'D. Modelado de enfermedades infecciosas'
+        ],
+        'A. Almacenamiento de datos y análisis a gran escala',
+        'seleccion_multiple'),
+    Pregunta(
+        'Orange Data Mining es adecuado para:',
+        [
+          'A. Análisis exploratorio de datos y aprendizaje automático',
+          'B. Integración de datos en la nube',
+          'C. Automatización de flujos de trabajo de datos',
+          'D. Visualización de datos en tiempo real'
+        ],
+        'A. Análisis exploratorio de datos y aprendizaje automático',
+        'seleccion_multiple'),
+    Pregunta(
+        'WEKA puede ser utilizado para:',
+        [
+          'A. Preprocesamiento de datos y clasificación',
+          'B. Integración de datos en la nube',
+          'C. Análisis predictivo',
+          'D. Minería de texto'
+        ],
+        'A. Preprocesamiento de datos y clasificación',
+        'seleccion_multiple'),
+    Pregunta(
+        'Revolution permite realizar:',
+        [
+          'A. Análisis estadísticos y minería de datos utilizando R',
+          'B. Integración de datos y automatización de flujos de trabajo',
+          'C. Visualización de datos en tiempo real',
+          'D. Análisis de texto'
+        ],
+        'A. Análisis estadísticos y minería de datos utilizando R',
+        'seleccion_multiple'),
+    
+    // Enumeration questions
+    Pregunta(
+      'Las principales funciones de Xplenty incluyen:',
       [],
-      '1.  Un bus de datos  \n2.  Un bus de direcciones   \n3. Un bus de control ',
+      '1. Extracción, Transformación y Carga (ETL)  \n2. Integración de Datos en la Nube   \n3. Automatización de Procesos   \n4. Visualización de Datos y Análisis',
+      'enumeracion',
+      respuestasEsperadas: 4,
+    ),
+    Pregunta(
+      'Aplicaciones de Orange Data Mining:',
+      [],
+      '1. Análisis exploratorio de datos  \n2. Aprendizaje automático   \n3. Análisis de texto',
       'enumeracion',
       respuestasEsperadas: 3,
     ),
     Pregunta(
-      'Las señales de reloj son:',
+      'WEKA contiene herramientas para diferentes tareas básicas:',
       [],
-      '1.  clkCPU  \n2.   clkFLASH   \n3. clkADC \n4.  clkI/O \n5. clkASY',
+      '1. Reprocesado  \n2. Clasificación   \n3. Agrupación   \n4. Asociación   \n5. Selección de atributos   \n6. Visualización',
+      'enumeracion',
+      respuestasEsperadas: 6,
+    ),
+    Pregunta(
+      'Áreas de orientación de Revolution:',
+      [],
+      '1. Análisis predictivo  \n2. Minería de datos   \n3. Estadística avanzada   \n4. Visualización de datos   \n5. Integración y escalabilidad',
       'enumeracion',
       respuestasEsperadas: 5,
     ),
-    Pregunta(
-        'proporcionan el mecanismo por medio del cual un microcontrolador se comunica con su entorno.',
-        [],
-        'Puertos de entrada/salida',
-        'completacion'),
-    Pregunta(
-      'Para el manejo de cada puerto se requiere de 3 registros del espacio de Registros I/O, éstos son:',
-      [],
-      '1. PORTx   \n2. DDRx    \n3. PINx ',
-      'enumeracion',
-      respuestasEsperadas: 3,
-    ),
-    /* Pregunta(
-      '',
-      [],
-      '1.    \n2.     \n3. ',
-      'enumeracion',
-      respuestasEsperadas: 3,
-    ),*/
-    Pregunta(
-        'es la ocurrencia de un evento producido por algún recurso del microcontrolador, que ocasiona la suspensión temporal del programa principal.',
-        [],
-        'Una Interrupcion',
-        'completacion'),
-    Pregunta(
-        'La _____________ o ________________ de un microcontrolador es fundamental para su operación adecuada, porque garantiza que sus registros internos van a tener un valor inicial conocido.',
-        [],
-        'inicialización o Reset',
-        'completacion'),
-    Pregunta(
-        ' permiten el ahorro de energía al “apagar” módulos de un MCU, cuyo uso no es requerido en un sistema',
-        [],
-        'modos de bajo consumo',
-        'completacion'),
-    Pregunta(
-        'En este modo de bajo consumo todos los recursos del MCU trabajan, pero la CPU no ejecuta instrucciones porque no tienen señal de reloj.',
-        [],
-        'Modo Ocioso',
-        'completacion'),
-    Pregunta(
-        ' En este modo de bajo consumo únicamente trabaja el ADC y el oscilador asíncrono para el temporizador 2.',
-        [],
-        'Modo de reducción de ruido en el ADC',
-        'completacion'),
-    Pregunta(
-        'En este modo de bajo consumo no hay reloj en los módulos de recursos y tampoco están activas las fuentes de oscilación, por lo tanto, es el modo con el menor consumo de energía',
-        [],
-        'Modo de baja potencia',
-        'completacion'),
   ];
 
   List<Pregunta> get preguntas => _preguntas;

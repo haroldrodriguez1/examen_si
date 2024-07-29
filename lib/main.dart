@@ -37,7 +37,7 @@ class _ExamenPantallaState extends State<ExamenPantalla> {
     return Scaffold(
       backgroundColor: Colors.blue[800],
       appBar: AppBar(
-        title: Text('Examen de Microcontroladores'),
+        title: Text('Examen de SISTEMAS INTELIGENTES'),
       ),
       body: ListView.builder(
         itemCount: preguntasProvider.preguntas.length,
